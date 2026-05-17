@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Mori no Mise — we'd love to hear from you about orders, collaborations, or just to say hello." />
+  <title>Contact — Mori no Mise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ ANNOUNCEMENT STRIP ░░ -->
+  <div class="strip">
+    🌿 Free shipping on orders over ¥5,000 &nbsp;·&nbsp; New arrivals every Sunday &nbsp;·&nbsp; Handmade with love 🌸
+  </div>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       STICKY NAVIGATION HEADER
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Mori no Mise Home">
+        <span class="nav-logo-main">Mori no Mise</span>
+        <span class="nav-logo-jp">森の店 · handmade goods</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cart" aria-label="Shopping cart">
+        🛒
+        <span class="nav-cart-badge">3</span>
+      </div>
+      <div class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       CONTACT HERO
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="contact-hero" aria-label="Contact page header">
+    <p class="label-accent">お問い合わせ · Get in Touch</p>
+    <h1 class="display-title">Say Hello to the Forest 🌿</h1>
+    <p style="margin-top:0.75rem; color:var(--warm-grey);">We read every message personally — please allow 1–2 days for a reply.</p>
+  </section>
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       CONTACT LAYOUT
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <div class="contact-layout">
+
+    <!-- ── LEFT: Contact Info ── -->
+    <aside aria-label="Contact information">
+
+      <p class="label-accent">連絡先情報</p>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.4rem);font-weight:300;margin-bottom:1rem;line-height:1.2;">
+        We'd love to hear<br>from you
+      </h2>
+
+      <p style="color:var(--warm-grey);line-height:1.9;font-size:0.97rem;margin-bottom:2rem;">
+        Whether you have a question about an order, want to discuss a custom commission,
+        are interested in wholesale, or simply want to share what Mori no Mise means to you —
+        our inbox is always open.
+      </p>
+
+      <!-- Contact detail items -->
+      <div class="contact-details">
+
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Studio Address</strong>
+            <span>Higashiyama-ku, Kyoto 605-0862<br>Japan (visits by appointment only)</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">✉️</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <span>hello@morinomise.jp</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">🕐</div>
+          <div class="contact-detail-text">
+            <strong>Reply Hours</strong>
+            <span>Mon – Fri, 10:00 – 17:00 JST<br>(1–2 business days)</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon">🎁</div>
+          <div class="contact-detail-text">
+            <strong>Custom Orders</strong>
+            <span>We welcome commissions! Please mention "custom" in your subject line.</span>
+          </div>
+        </div>
+
+      </div><!-- /.contact-details -->
+
+      <!-- Social links -->
+      <div style="margin-top:2rem;">
+        <p class="label-accent" style="margin-bottom:0.75rem;">Find us here</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+          <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+          <a href="#" class="social-link" aria-label="Etsy">🛒</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+
+    </aside><!-- /.contact-info -->
+
+
+    <!-- ── RIGHT: Contact Form ── -->
+    <main aria-label="Contact form">
+
+      <div class="contact-form-card">
+
+        <p class="label-accent">メッセージを送る</p>
+        <h3>Send us a message</h3>
+
+        <!-- Note: form has no action in this static demo -->
+        <form action="#" method="post" novalidate>
+
+          <!-- Name + Email row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name *</label>
+              <input
+                class="form-input"
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Hana Tanaka"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address *</label>
+              <input
+                class="form-input"
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="hello@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <!-- Subject select -->
+          <div class="form-group">
+            <label class="form-label" for="contact-subject">Subject</label>
+            <select class="form-select" id="contact-subject" name="subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="order">Order Enquiry</option>
+              <option value="custom">Custom / Commission</option>
+              <option value="wholesale">Wholesale</option>
+              <option value="collab">Collaboration</option>
+              <option value="press">Press / Media</option>
+              <option value="other">Just Saying Hello 🌸</option>
+            </select>
+          </div>
+
+          <!-- Order number (optional) -->
+          <div class="form-group">
+            <label class="form-label" for="contact-order">Order Number <span style="color:var(--warm-grey);">(optional)</span></label>
+            <input
+              class="form-input"
+              type="text"
+              id="contact-order"
+              name="order_number"
+              placeholder="MNM-2025-XXXXX"
+            />
+          </div>
+
+          <!-- Message textarea -->
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Your Message *</label>
+            <textarea
+              class="form-textarea"
+              id="contact-message"
+              name="message"
+              placeholder="Tell us what's on your mind — we love hearing from you. If this is a custom order request, please include as many details as you'd like: size, colours, characters, intended use…"
+              required
+            ></textarea>
+          </div>
+
+          <!-- How did you hear about us -->
+          <div class="form-group">
+            <label class="form-label" for="contact-source">How did you find us?</label>
+            <select class="form-select" id="contact-source" name="source">
+              <option value="" disabled selected>Choose one…</option>
+              <option>Instagram</option>
+              <option>Pinterest</option>
+              <option>Etsy</option>
+              <option>A friend recommended me</option>
+              <option>Google Search</option>
+              <option>I've been a customer for a while!</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <!-- Newsletter opt-in -->
+          <div class="form-group" style="margin-top:1.2rem;">
+            <label class="filter-label" style="font-size:0.85rem;color:var(--charcoal);">
+              <input type="checkbox" name="newsletter" />
+              Subscribe me to the Forest Circle newsletter 🌸
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary btn-submit">
+            Send Your Message ✦
+          </button>
+
+          <p style="font-size:0.78rem;color:var(--warm-grey);margin-top:1rem;text-align:center;line-height:1.6;">
+            Your details are kept private and never shared. ·
+            <a href="#" style="color:var(--sienna);">Privacy Policy</a>
+          </p>
+
+        </form>
+
+      </div><!-- /.contact-form-card -->
+
+    </main>
+
+  </div><!-- /.contact-layout -->
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       FAQ ACCORDION (CSS only)
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="section section-alt" aria-labelledby="faq-heading">
+    <div class="section-inner">
+
+      <header class="section-header">
+        <p class="label-accent">よくある質問</p>
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+      </header>
+
+      <!-- CSS-only accordion using checkbox hack -->
+      <div style="max-width:720px;margin:0 auto;" role="list">
+
+        <!-- FAQ Item 1 -->
+        <div style="border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden;" role="listitem">
+          <input type="checkbox" id="faq1" style="display:none;" />
+          <label for="faq1" style="display:flex;justify-content:space-between;align-items:center;padding:18px 20px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;background:var(--warm-white);user-select:none;">
+            Do you ship internationally?
+            <span style="font-size:1.2rem;color:var(--sienna);">+</span>
+          </label>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--cream);padding:0 20px;">
+            <p style="padding:16px 0;font-size:0.92rem;color:var(--warm-grey);line-height:1.8;">
+              Yes! We ship worldwide from Kyoto. Shipping times vary: Japan 2–4 days, Asia 5–10 days, Europe/USA 10–18 days. We use eco-friendly packaging and ship with Japan Post and DHL depending on destination.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div style="border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden;" role="listitem">
+          <input type="checkbox" id="faq2" style="display:none;" />
+          <label for="faq2" style="display:flex;justify-content:space-between;align-items:center;padding:18px 20px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;background:var(--warm-white);user-select:none;">
+            Can I request a custom order?
+            <span style="font-size:1.2rem;color:var(--sienna);">+</span>
+          </label>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--cream);padding:0 20px;">
+            <p style="padding:16px 0;font-size:0.92rem;color:var(--warm-grey);line-height:1.8;">
+              Absolutely! Custom crochet plushies, personalised art prints, and commissioned ceramics are all possible. Use the contact form above with "custom" in the subject line, and describe your dream piece in as much detail as you like. Custom orders typically take 4–8 weeks.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div style="border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden;" role="listitem">
+          <input type="checkbox" id="faq3" style="display:none;" />
+          <label for="faq3" style="display:flex;justify-content:space-between;align-items:center;padding:18px 20px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;background:var(--warm-white);user-select:none;">
+            How do you care for crochet items?
+            <span style="font-size:1.2rem;color:var(--sienna);">+</span>
+          </label>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--cream);padding:0 20px;">
+            <p style="padding:16px 0;font-size:0.92rem;color:var(--warm-grey);line-height:1.8;">
+              All crochet items come with a care card. Generally: gentle hand-wash in cool water, no wringing, reshape and air dry flat. Avoid prolonged direct sunlight to preserve the colours. With gentle care your plushie friend will last many, many years.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div style="border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden;" role="listitem">
+          <input type="checkbox" id="faq4" style="display:none;" />
+          <label for="faq4" style="display:flex;justify-content:space-between;align-items:center;padding:18px 20px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;background:var(--warm-white);user-select:none;">
+            Do you offer returns or exchanges?
+            <span style="font-size:1.2rem;color:var(--sienna);">+</span>
+          </label>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--cream);padding:0 20px;">
+            <p style="padding:16px 0;font-size:0.92rem;color:var(--warm-grey);line-height:1.8;">
+              Because every item is handmade and unique, we can't accept returns unless an item arrives damaged. If anything arrives in less than perfect condition, please photograph it and contact us within 7 days — we will always make it right. Custom orders are non-refundable once work has begun.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div style="border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:10px;overflow:hidden;" role="listitem">
+          <input type="checkbox" id="faq5" style="display:none;" />
+          <label for="faq5" style="display:flex;justify-content:space-between;align-items:center;padding:18px 20px;cursor:pointer;font-family:var(--font-display);font-size:1.05rem;background:var(--warm-white);user-select:none;">
+            Are your items safe for children?
+            <span style="font-size:1.2rem;color:var(--sienna);">+</span>
+          </label>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--cream);padding:0 20px;">
+            <p style="padding:16px 0;font-size:0.92rem;color:var(--warm-grey);line-height:1.8;">
+              Our crochet plushies use safety eyes and non-toxic fibres, but they are designed as collectibles for ages 3 and up. Ceramics and art prints are for adults and older children only. If you're unsure, just ask — we're happy to advise on which pieces are best for little ones.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.faq accordion -->
+
+    </div>
+  </section>
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       MAP / LOCATION AESTHETIC BLOCK
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="section" aria-label="Studio location">
+    <div class="section-inner">
+
+      <header class="section-header">
+        <p class="label-accent">場所 · Location</p>
+        <h2 class="section-title">Find the Forest</h2>
+        <p>Our studio is in the Higashiyama district of Kyoto — open for visits by appointment.</p>
+      </header>
+
+      <!-- Decorative map placeholder -->
+      <div style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:21/9;background:linear-gradient(135deg,#e8d5ca,#c5dde8,#b5c9b0);position:relative;border:1px solid var(--border);">
+        <img src="images/map.jpg" alt="Studio location in Higashiyama, Kyoto" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        <!-- Map pin overlay -->
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);text-align:center;">
+          <div style="background:rgba(253,248,240,0.95);backdrop-filter:blur(8px);border-radius:var(--radius-md);padding:14px 20px;border:1px solid var(--border);box-shadow:var(--shadow-card);">
+            <div style="font-size:1.5rem;margin-bottom:4px;">📍</div>
+            <p style="font-family:var(--font-display);font-size:1.1rem;color:var(--charcoal);">Mori no Mise Studio</p>
+            <p style="font-size:0.78rem;color:var(--warm-grey);font-family:var(--font-accent);">Higashiyama-ku, Kyoto</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info row below map -->
+      <div class="features-row" style="margin-top:2rem;">
+        <div class="feature-item">
+          <span class="feature-icon">🗓️</span>
+          <h3 class="feature-title">Book a Visit</h3>
+          <p class="feature-desc">Studio visits are available Thursday–Saturday. Contact us to arrange a time.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🚇</span>
+          <h3 class="feature-title">Getting Here</h3>
+          <p class="feature-desc">5 min walk from Higashiyama Station on the Tōzai Line. Look for the green door.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎋</span>
+          <h3 class="feature-title">The Neighbourhood</h3>
+          <p class="feature-desc">Surrounded by temples, stone paths, and matcha cafés. Leave time to wander.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       NEWSLETTER SECTION
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section class="newsletter-section" aria-label="Newsletter signup">
+    <div class="newsletter-inner">
+      <p class="label-accent">メールマガジン</p>
+      <h2>Join the Forest Circle</h2>
+      <p>New arrivals, seasonal stories, and quiet little moments — delivered to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" />
+        <button type="button" class="btn btn-primary btn-sm">Subscribe 🌸</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       SITE FOOTER
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="nav-logo-main">Mori no Mise</span>
+            <span class="nav-logo-jp">森の店 · handmade goods</span>
+          </div>
+          <p>A small, magical shop born from a love of handmade things, Studio Ghibli films, and cozy Japanese aesthetics.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Etsy">🛒</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">Crochet</a></li>
+            <li><a href="shop.html">Art Prints</a></li>
+            <li><a href="shop.html">Ceramics</a></li>
+            <li><a href="shop.html">Collectibles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#">Behind the Scenes</a></li>
+            <li><a href="#">Making Diary</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mori no Mise · Handmade in Kyoto, Japan 🌿</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
